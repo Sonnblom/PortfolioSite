@@ -1,0 +1,774 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    background-color: rgb(255, 255, 255);
+
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.graphicText {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 150px;
+
+}
+
+.softwareText {
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 150px;
+}
+
+
+
+/* GText is the H1 thats inside of the graphicText div, and below are the hover properties */
+#GText {
+    transition: 0.6s;
+    width: 500px;
+    /* align-self: center; */
+}
+
+.GHover:hover {
+    transform: scale(1.1);
+}
+
+.GClicked {
+    transform: translateY(-100vh);
+    transition: 1s;
+}
+
+/* SText is the H1 thats inside of the softwareText div, and below are the hover properties */
+#SText {
+    transition: 0.6s;
+    width: 500px;
+    /* align-self: center; */
+}
+
+.SHover:hover {
+    transform: scale(1.1);
+}
+
+.SClicked {
+    transform: translateY(-100vh);
+    transition: 1s;
+
+}
+
+#softwareContainer {
+    height: 95%;
+    width: 97.5%;
+    overflow-y: auto;
+
+    position: absolute;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+
+    display: grid;
+    grid-template-rows: 125px 350px 350px 350px 350px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 150px;
+
+}
+
+.softwareOffScreen {
+    top: 100vh;
+    transform: translateX(-50%);
+}
+
+#softwareHeader {
+    grid-row: 1;
+    grid-column: 1/1;
+}
+
+#XButton {
+    height: 25px;
+    width: 25px;
+    background-color: chartreuse;
+    grid-row: 1;
+    grid-column: 1/1;
+    border-radius: 5px;
+}
+
+.GDB1 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    grid-row: 2;
+    grid-column: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.softwareThumbnail1 {
+    height: 250px;
+    width: 350px;
+    background-color: brown;
+    margin-right: 25px;
+    border: rgb(30, 164, 113) solid 5px;
+}
+
+.softwareTextBox1 {
+    height: 200px;
+    width: 500px;
+    /* background-color: tan; */
+    margin-left: 25px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+    
+}
+
+.GDB2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    grid-row: 3;
+    grid-column: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.softwareThumbnail2 {
+    height: 250px;
+    width: 350px;
+    background-color: brown;
+    margin-right: 25px;
+    border: rgb(30, 164, 113) solid 5px;
+}
+
+.softwareTextBox2 {
+    height: 200px;
+    width: 500px;
+    /* background-color: tan; */
+    margin-left: 25px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+}
+
+.GDB3 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    grid-row: 4;
+    grid-column: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.softwareThumbnail3 {
+    height: 250px;
+    width: 350px;
+    background-color: brown;
+    margin-right: 25px;
+}
+
+.softwareTextBox3 {
+    height: 200px;
+    width: 500px;
+    /* background-color: tan; */
+    margin-left: 25px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+}
+
+.GDB4 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    grid-row: 5;
+    grid-column: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.softwareThumbnail4 {
+    height: 250px;
+    width: 350px;
+    background-color: brown;
+    margin-right: 25px;
+}
+
+.softwareTextBox4 {
+    height: 200px;
+    width: 500px;
+    background-color: tan;
+    margin-left: 25px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+}
+
+#softFont {
+    font-size: 20px;
+}
+
+
+
+#graphicContainer {
+    height: 95%;
+    width: 97.5%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    position: absolute;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+
+
+}
+
+.graphicOffScreen {
+    top: 100vh;
+    transform: translateX(-50%);
+}
+
+
+.gridHeader {
+    display: grid;
+    grid-template-rows: 350px 1250px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.welcomeTextBox {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 650px;
+    height: 550px;
+    border: solid rgb(255, 255, 255) 5px;
+    border-radius: 25px;
+    margin-right: 150px;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(109, 221, 255);
+    letter-spacing: 5px;
+    line-height: 45px;
+
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Assets/effortless.ttf);
+}
+
+.portSnowman {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaSnowmanKeychain {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.portImage {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    grid-row: 1/1;
+    grid-column: 1/3;
+    padding-bottom: 75px;
+}
+
+.portHome {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    justify-self: right;
+    align-items: center;
+    align-self: baseline;
+}
+
+#XButton2 {
+    height: 25px;
+    width: 25px;
+    background-color: chartreuse;
+    grid-row: 1;
+    grid-column: 1/1;
+    border-radius: 5px;
+    align-self: self-start;
+    justify-self: baseline;
+}
+
+.gridBody {
+    display: grid;
+    grid-template-rows: 850px 850px 850px 850px 850px 850px 850px 850px 850px 850px 850px 850px 850px;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    padding: 20px;
+    padding-left: 25px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    /* border: solid rgb(223, 223, 223) 20px; */
+}
+
+.Box1 {
+    grid-row: 1/1;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaRamen {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box2 {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    display: flex;
+    align-self: baseline;
+    width: 550px;
+    z-index: 1;
+    margin-right: 400px;
+}
+
+.mediaRamen2 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box3 {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    /* width:725px ;
+    padding-left: 50px; */
+}
+
+.mediaDJ {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box4 {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    /* width:725px ;
+    padding-left: 50px;   */
+}
+
+.Box5 {
+    grid-row: 3/3;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: right; */
+    /* width:725px ;   */
+}
+
+.mediaSilverBack {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box6 {
+    grid-row: 3/3;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    /* justify-content: right; */
+    width: 800px;
+    margin-top: 200px;
+}
+
+.mediaSilverBack2 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box7 {
+    grid-row: 4/4;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    width: 700px;
+    height: 700px;
+}
+
+.mediaJaydaMushroom {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.mediaJaydaMushroom2 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box8 {
+    grid-row: 4/4;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 500px;
+    /* justify-content: right; */
+    /* width:500px ;
+    height:500px ;   */
+}
+
+.mediaColorado {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box9 {
+    grid-row: 5/5;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    height: 600px;
+    width: fit-content;
+    align-self: baseline;
+    align-items: center;
+    align-content: center;
+    /* border: solid rgb(200, 200, 200) 2.5px; */
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.Box10 {
+    grid-row: 6/6;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    /* width:725px ;
+    padding-left: 50px; */
+    width: 600px;
+    height: 700px;
+
+}
+
+.mediaPizzaDJ {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box11 {
+    grid-row: 6/6;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+}
+
+.mediaPizzaDJ2 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box12 {
+    grid-row: 7/7;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    /* justify-content: right; */
+    height: 600px;
+    width: fit-content;
+    align-self: baseline;
+    align-items: center;
+    align-content: center;
+    /* border: solid rgb(200, 200, 200) 2.5px; */
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.Box13 {
+    grid-row: 8/8;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaGraveyard {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box14 {
+    grid-row: 8/8;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaGraveyard2 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#carouselExample {
+    border-radius: 25px;
+}
+
+.carousel-control-prev-icon {
+    visibility: hidden;
+    display: none;
+}
+
+.carousel-control-next-icon {
+    visibility: hidden;
+    display: none;
+}
+
+.Box15 {
+    grid-row: 9/9;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaGlobe {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box16 {
+    grid-row: 9/9;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.Box17 {
+    grid-row: 10/10;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaVandy {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box18 {
+    grid-row: 10/10;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaVandyCity {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.mediaSlotHead {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box19 {
+    grid-row: 11/11;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaGatoTV {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box20 {
+    grid-row: 11/11;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaGatoTV2 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box21 {
+    grid-row: 12/12;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaDOOM {
+    border-radius: 20px;
+}
+
+.Box22 {
+    grid-row: 12/12;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.Box23 {
+    grid-row: 13/13;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 75px;
+}
+
+.mediaSolVid {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box24 {
+    grid-row: 14/14;
+    grid-column: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaSol1 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Box25 {
+    grid-row: 14/14;
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mediaSol2 {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#modelViewer {
+    width: 650px;
+    height: 650px;
+}
+
+.graphicDesignOption {
+    width: 750px; /* Set the initial width */
+    transition: transform 0.3s; /* Add a transition for smooth effect */
+    align-self: center;
+}
+
+/* Define the hover state and change the image source */
+.graphicDesignOption:hover {
+    transform: scale(1.1); /* Scale the image up by 10% on hover */
+    /* content: url(/Assets/IMG_0108.PNG); */
+}
+
+.HomeIcon{
+    position: fixed;
+  top: 15%;
+  right: 1%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
