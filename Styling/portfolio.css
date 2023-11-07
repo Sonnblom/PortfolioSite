@@ -193,6 +193,7 @@ body {
     width: 350px;
     background-color: brown;
     margin-right: 25px;
+    border: rgb(30, 164, 113) solid 5px;
 }
 
 .softwareTextBox3 {
