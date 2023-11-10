@@ -85,9 +85,9 @@ body {
     transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
 
     display: grid;
-    grid-template-rows: 125px 350px 350px 350px 350px;
-    grid-template-columns: 1fr;
-    grid-row-gap: 150px;
+    grid-template-rows: 300px 100px 450px 100px 450px 100px 450px 100px;
+    grid-template-columns: 15% 70% 15%;
+   
 
 }
 
@@ -108,134 +108,7 @@ body {
     grid-row: 1;
     grid-column: 1/1;
     border-radius: 5px;
-}
-
-.GDB1 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-
-    grid-row: 2;
-    grid-column: 1/1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.softwareThumbnail1 {
-    height: 250px;
-    width: 350px;
-    background-color: brown;
-    margin-right: 25px;
-    border: rgb(30, 164, 113) solid 5px;
-}
-
-.softwareTextBox1 {
-    height: 200px;
-    width: 500px;
-    /* background-color: tan; */
-    margin-left: 25px;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: left;
-    
-}
-
-.GDB2 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-
-    grid-row: 3;
-    grid-column: 1/1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.softwareThumbnail2 {
-    height: 250px;
-    width: 350px;
-    background-color: brown;
-    margin-right: 25px;
-    border: rgb(30, 164, 113) solid 5px;
-}
-
-.softwareTextBox2 {
-    height: 200px;
-    width: 500px;
-    /* background-color: tan; */
-    margin-left: 25px;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: left;
-}
-
-.GDB3 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-
-    grid-row: 4;
-    grid-column: 1/1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.softwareThumbnail3 {
-    height: 250px;
-    width: 350px;
-    background-color: brown;
-    margin-right: 25px;
-    border: rgb(30, 164, 113) solid 5px;
-}
-
-.softwareTextBox3 {
-    height: 200px;
-    width: 500px;
-    /* background-color: tan; */
-    margin-left: 25px;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: left;
-}
-
-.GDB4 {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-
-    grid-row: 5;
-    grid-column: 1/1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.softwareThumbnail4 {
-    height: 250px;
-    width: 350px;
-    background-color: brown;
-    margin-right: 25px;
-}
-
-.softwareTextBox4 {
-    height: 200px;
-    width: 500px;
-    background-color: tan;
-    margin-left: 25px;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: left;
+    z-index: 2;
 }
 
 #softFont {
@@ -772,4 +645,84 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+.ParentGrid1{
+    /* background-color: grey; */
+grid-row: 3;
+grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.ParentGrid2{
+    /* background-color: grey; */
+grid-row: 5;
+grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.ParentGrid3{
+    /* background-color: grey; */
+grid-row: 7;
+grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.Thumbnail{
+    grid-column: 1;
+    grid-row: 1;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DesContainer{
+    grid-column: 2;
+    grid-row: 1;
+    /* background-color: tan; */
+
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.Des{
+    /* background-color: blueviolet; */
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+}
+
+.IconsBox{
+    width: 100%;
+    height: 15%;
+    /* background-color: white; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SoftWareHeaderImage{
+    grid-row: 1;
+    grid-column: 1/4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
